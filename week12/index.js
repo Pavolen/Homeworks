@@ -23,45 +23,60 @@ commentAdd.addEventListener("click", () => {
   // console.log('commentAdd');
 });
 
-form.addEventListener('submit', (event) =>{
+form.addEventListener("submit", (event) => {
   event.preventDefault();
- const name = commentName.value
- const body = commentBody.value
- const photo = commentPhoto.value
- const div = document.createElement('div');
- div.classList.add('chat_item');
- div.innerHTML = `
- <img class="chat_img" src="${photo}" alt="${photo}" />
+  const name = commentName.value;
+  const body = commentBody.value;
+  const photo = commentPhoto.value === '' ? "./img/man.png" : commentPhoto.value;
+  // const rer = false;
+
+  // if(rer){
+  //   console.log('true');
+  // } else {
+  //   console.log('false');
+  // }
+  // photo === '' ? './img/man.png' : photo ;
+
+  // const a = '/fssfs/' || ''
+  //  &&
+
+  // console.log("false");
+  // console.log("true");
+
+  const div = document.createElement("div");
+  div.classList.add("chat_item");
+  div.innerHTML = `
+ <img class="chat_img" src="${photo}" alt="${name}" />
  <strong class="chat_name">${name}</strong>
  <p class="chat_comment">${body}</p>
- `
+ `;
 
-chatContent.appendChild(div);
-commentBody.value = '';
+  chatContent.appendChild(div);
+  commentBody.value = "";
 
-commentName.value = '';
+  commentName.value = "";
 
-commentPhoto.value = '';
-
-
+  commentPhoto.value = "";
 
   // console.log('submit', []);
-})
+});
 
-{/* 
+{
+  /* 
 <div class="chat_item">
   <img class="chat_img" src="./img/man.png" alt="men" />
   <strong class="chat_name">Наталья Петровна Шустрая</strong>
   <p class="chat_comment">Хороший сайт. Довольна</p>
 </div>
-*/}
+*/
+}
 
 function checkSpam(string) {
   let newString = string;
   //  'viagra xxx'
   //  badSlang.split(' ') == ['viagra','xxx']
   //  item ==
-  
+
   badSlang.split(" ").forEach((item) => {
     const re = new RegExp(item, "gi");
 
@@ -75,8 +90,6 @@ function capitalizeFirstLetter(string) {
   //return string.charAt(0).toUpperCase()+string.slice(1);
   return string[0].toUpperCase() + string.slice(1).toLowerCase();
 }
-
-
 
 // document.getElementById('comment-add').onclick = function(event){
 
