@@ -1,0 +1,19 @@
+.container{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    line-height:60px;
+}
+.chat{
+    width: 93%;
+    padding-left: 105px;
+}
+.chat_img{
+    width: 30px;
+}
+
+.chat_item{
+    border-color: white;
+    border-bottom: dashed;
+    border-width: 1px;  
+}
