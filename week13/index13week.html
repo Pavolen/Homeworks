@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/week13/index13week.css">
+
+    <title>Система комментариев</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center">Оставьте ваш комментарий</h2>
+        </div>
+
+        <div class="col-lg-6">
+          <div id="comment-field"></div>
+        </div>
+        <div class="col-lg-6">
+          <form id="form">
+            <div class="form-group">
+              <label for="comment-name">Введите ваше ФИО:</label>
+              <input type="name" class="form-control"
+                id="comment-name"
+                placeholder="ФИО"
+              />
+            </div>
+            <div class="form-group">
+              <label for="comment-photo">Введите ссылку на аватар:</label>
+              <input type="photo" class="form-control"
+                id="comment-photo"
+                placeholder="Фотография"
+              />
+            </div>
+            <div class="form-group">
+              <label for="comment-body">Оставьте комментарий:</label>
+              <input
+                type="name"
+                class="form-control"
+                id="comment-body"
+                placeholder="Комментарий"
+              />
+            </div>
+            <div class="form-group text-right">
+              <button type="submit" id="comment-add" class="btn btn-primary">
+                Отправить комментарий
+              </button>
+            </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div id="chat" class="chat">
+      <h3>Чат</h3>
+      <div class="chat_content">
+        <!-- <div class="chat_item">
+          <img class="chat_img" src="./img/man.png" alt="men" />
+          <strong class="chat_name">Наталья Петровна Шустрая</strong>
+          <p class="chat_comment">Хороший сайт. Довольна</p>
+        </div>
+        <div class="chat_item">
+          <img class="chat_img" src="./img/man.png" alt="men" />
+          <strong class="chat_name">Наталья Петровна Шустрая</strong>
+          <p class="chat_comment">Хороший сайт. Довольна</p>
+        </div> -->
+      </div>
+    </div>
+    <script src="/week13/index13week.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
