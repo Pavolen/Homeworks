@@ -1,0 +1,16 @@
+.images {
+    width: 300px;
+}
+.card {
+    width: 350px;
+    height: 400px;
+    font-size: 8px;
+
+}
+.card-add {
+    width: 70px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: darkgoldenrod;
+    font-size: 20px;
+}
